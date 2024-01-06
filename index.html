@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="">
+</head>
+<title>
+
+</title>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+        <div class="container">
+          <a class='branding' href='/'>
+						<img src="css/images/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title h5">Weather</h1>
+							<small class="site-description">tagline goes here</small>
+						</div>
+					</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header class="hero p-5">
+        <form class="find-location">
+          <input
+          id="search_input"
+            type="text"
+            class="form-control  rounded-5"
+            placeholder="Search City"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2" />
+            <button
+            class="btn btn-primary confirm_search_btn ms-2 rounded-5 px-4"
+            type="button"
+            id="button-addon2">
+            Search
+          </button>
+          <button class="detect_location rounded-circle">
+            <i class="fa-solid fa-location-crosshairs"></i>
+          </button>
+        </form> <br> <br> <br>
+        <div id="allData">
+                  <!-- <div class="card-group">
+          <div class="card  bg-dark border-light text-light">
+            <div class="card-header border-light">
+              <span class="day_name text-uppercase">sunday</span>
+              <span class="day_date text-capitalize">31 December</span>
+            </div>
+            <div class="card-body">
+              <p class="city_name">Cairo</p>
+              <h5 class="h1 weather_degree" style="font-size: 50px;">15<sup>o</sup>C</h5>
+              <p class="status_condition">Mist</p>
+              <span>
+                <img src="css/images/icon-umberella.png" alt="">
+                20%
+              </span>
+              <span>
+                <img src="css/images/icon-wind.png" alt="">
+                18km/h
+              </span>
+              <span>
+                <img src="css/images/icon-compass.png" alt="">
+                East
+              </span>
+            </div>
+          </div>
+          <div class="card  bg-dark border-light text-light text-center">
+            <div class="card-header border-light">
+              <span class="day_name text-uppercase">monday</span>
+            </div>
+            <div class="card-body">
+              
+              <img src="css/images/113.png" alt="">
+              <div class="weather_degree">21.1<sup>o</sup>C</div>
+              <small>12.8<sup>o</sup></small>
+              <p class="status_condition">Sunny</p>
+            </div>
+          </div>
+          <div class="card  bg-dark border-light text-light text-center">
+            <div class="card-header border-light">
+              <span class="day_name text-uppercase">tuseday</span>
+            </div>
+            <div class="card-body">
+              
+              <img src="css/images/113.png" alt="">
+              <div class="weather_degree">22.9<sup>o</sup>C</div>
+              <small>14<sup>o</sup></small>
+              <p class="status_condition">Sunny</p>
+            </div>
+          </div>
+        </div> -->
+
+        </div>
+
+      </header>
+
+    <footer class="site-footer py-5" style="height: 30vh;">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form">
+              <input type="text" placeholder="Enter your email to subscribe..." class="form-control">
+              <input type="submit" value="Subscribe" class="btn btn-primary">
+            </form>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="col-md-4">
+              <div class="icons_container d-flex justify-content-evenly">
+                <div class="icon">
+                  <a
+                    href="https://www.linkedin.com/in/omar-eldeeb-60a130199/"
+                    target="_blank"
+                    class="text-decoration-none">
+                    <i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+                <div class="icon">
+                  <a
+                    href="https://github.com/Omar-Eldeeb98"
+                    target="_blank"
+                    class="text-decoration-none"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </div>
+                <div class="icon">
+                  <a
+                    href="mailto:oeldeeb111@gmail.com"
+                    class="text-decoration-none"
+                    target="_blank">
+                    <i class="fa-solid fa-envelope"></i
+                  ></a>
+                </div>
+                <div class="icon">
+                  <a
+                    href="https://wa.me/+201220506973"
+                    target="_blank"
+                    class="text-decoration-none"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <p class="colophon text-white my-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer> 
+    
+    <!-- JS -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>

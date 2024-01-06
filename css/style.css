@@ -1,0 +1,86 @@
+/* General classes*/
+.w-fit {
+    width: fit-content;
+}
+.max-w-500 {
+    max-width: 500px;
+}
+.text-gray {
+    color: gray;
+}
+@media screen and (min-width:992px) {
+    .w-lg-75 {
+        width: 75%;
+    }
+}
+/* */
+header {
+    height: calc(100vh - 56px);
+}
+.hero {
+    background-image: url(images/banner.png);
+    background-size: cover;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.site-header .branding .site-description {
+    font-size: 10px;
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+.logo  {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+}
+.branding {
+    display: grid;
+    grid-template-columns: 100px 150px;
+}
+.find-location {
+    position: relative;
+}
+#input {
+    width: 100%;
+    /* padding: 20px 50px 20px 20px; */
+    background: #1e202b;
+    color: white;
+}
+#find {
+    position: absolute;
+    top: 5px;
+    right: 13%;
+    bottom: 5px;
+    padding: 0 20px;
+}
+.table {
+    background-color: red;
+}
+.site-footer {
+    background-color: #1e202b;
+}
+.icon i {
+    background-color: #262936;
+    color: #009ad8;
+    /* background-color: red; */
+    border-radius: 50%;
+    padding: 10px;
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon :hover {
+    background-color: #009ad8;
+    color: white;
+    transition: 0.2s;
+}
+.icons_container {
+    margin-left: 20px;
+}
